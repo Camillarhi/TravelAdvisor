@@ -3,9 +3,8 @@ import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, 
 import useStyles from './styles';
 import PlaceDetails from '../placeDetails/placeDetails'
 
-export default function List({ places, childClicked, isLoading }) {
-  const [type, setType] = useState('')
-  const [rating, setRating] = useState('')
+export default function List({ places, childClicked, isLoading, type, setType, rating, setRating }) {
+ 
   const classes = useStyles();
   const [elRefs, setElRefs] = useState([]);
   useEffect(() => {
